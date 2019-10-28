@@ -1,11 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
+import javascriptlogo from './JavaScript-logo.png';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <h1>Welcome to Kodflix</h1>
+      <img src={javascriptlogo} alt='Javascript Logo' />
     </div>
   );
 }
