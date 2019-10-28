@@ -5,3 +5,13 @@
 img {
   width: 25%;
 }
+
+.containter {
+  display: flex;
+}
+
+.item {
+  flex: 1;
+}
+
+

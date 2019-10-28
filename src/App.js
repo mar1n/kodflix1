@@ -7,11 +7,16 @@ function App() {
     <div className="App">
       <h1>Welcome to Kodflix</h1>
       <img src={javascriptLogo} alt='Javascript Logo' />
-      <br /><br /><br />
-      <div>
-        <div>ReactJs</div>
-        <div>HTML5</div>
-        <div>CSS</div>
+      
+      <div className='containter'>
+        <div className='item'>Football</div>
+        <div className='item'>Baskteball</div>
+        <div className='item'>Rugby</div>
+      </div>
+      <div className='containter'>
+        <div className='item'>Tennis</div>
+        <div className='item'>Ping pong</div>
+        <div className='item'>Dart</div>
       </div>
     </div>
   );
