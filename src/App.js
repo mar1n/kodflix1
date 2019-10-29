@@ -13,26 +13,36 @@ function App() {
     <div className="App">
       <h1>Welcome to Kodflix</h1>
       <img src={javascriptLogo} alt='Javascript Logo' />
-      
+
       <div className='containter'>
-       
+
         <div className='item'>
-        <img src={football} alt='Football' />
-          </div>
-        
-        <div className='item'><img src={basketball} alt='Basketball' /></div>
-        
-        <div className='item'><img src={rugby} alt='Rugby' /></div>
+          <img src={football} alt='Football' />
+        </div>
+
+        <div className='item'>
+          <img src={basketball} alt='Basketball' />
+        </div>
+
+        <div className='item'>
+          <img src={rugby} alt='Rugby' />
+        </div>
       </div>
       <div className='containter'>
-      
-        <div className='item'><img src={tennis} alt='Tennis' /></div>
-        
-        <div className='item'><img src={pingpong} alt='Ping pong' /></div>
-        
-        <div className='item'><img src={dart} alt='Dart' /></div>
+
+        <div className='item'>
+          <img src={tennis} alt='Tennis' />
+        </div>
+
+        <div className='item'>
+          <img src={pingpong} alt='Ping pong' />
+        </div>
+
+        <div className='item'>
+          <img src={dart} alt='Dart' />
+        </div>
       </div>
-    </div>
+    </div >
   );
 }
 
