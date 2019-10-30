@@ -12,14 +12,14 @@ export default function Activity() {
     return (
       <div>
         <div className='containter'>
-          <Sport name='Football' picture={football} />
-          <Sport name='Basketball' picture={basketball} />
-          <Sport name='Rugby' picture={rugby} />
+          <Sport id='football' name='Football' picture={football} />
+          <Sport id='basketball' name='Basketball' picture={basketball} />
+          <Sport id='rugby' name='Rugby' picture={rugby} />
         </div>
         <div className='containter'>
-          <Sport name='Tennis' picture={tennis} />
-          <Sport name='Ping Pong' picture={pingpong} />
-          <Sport name='Dart' picture={dart} />
+          <Sport id='tennis' name='Tennis' picture={tennis} />
+          <Sport id='pingpong' name='Ping Pong' picture={pingpong} />
+          <Sport id='dart' name='Dart' picture={dart} />
         </div>
       </div>
     );
