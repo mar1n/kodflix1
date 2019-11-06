@@ -5,6 +5,7 @@ export default class Details extends React.Component {
 
     constructor () {
         super();
+        debugger;
         this.state = {
             welcomeMessage: 'Welcome to the details page, WP!!'
         };
