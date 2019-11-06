@@ -7,11 +7,15 @@ img {
   height: 100%;
 }
 .containter {
-  display: flex;
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .item {
   flex: 1;
+  flex-basis: 120px;
   padding: 30px;
   border: 1px solid silver;
   position: relative;
@@ -35,9 +39,5 @@ img {
   bottom: 0;
 }
 
-@media only screen and (max-width: 600px) {
-  .containter {
-    flex-direction: column;
-  }
-}
+
 
