@@ -5,14 +5,16 @@ export default class Details extends React.Component {
 
     constructor () {
         super();
-        debugger;
+        
         this.state = {
             welcomeMessage: 'Welcome to the details page, WP!!'
         };
     }
 
     componentDidMount() {
+    let details = this.props.match.params.sportId;
         setTimeout(() => {
+            
             this.setState({
                 welcomeMessage: 'The best is yet to come!'
             })
@@ -20,6 +22,7 @@ export default class Details extends React.Component {
         }, 3000)
     }
     render() {
+        
         return(
             <Link to='/'>
                 <h1>{this.state.welcomeMessage}</h1>
