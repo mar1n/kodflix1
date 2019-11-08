@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import getactivity from './activity-get';
 
 export default class Details extends React.Component {
 
@@ -7,25 +8,21 @@ export default class Details extends React.Component {
         super();
         
         this.state = {
-            welcomeMessage: 'Welcome to the details page, WP!!'
+            sport: {}
         };
     }
 
     componentDidMount() {
-    let details = this.props.match.params.sportId;
-        setTimeout(() => {
-            
-            this.setState({
-                welcomeMessage: 'The best is yet to come!'
-            })
-            //good stuff heere
-        }, 3000)
+            let sportId = this.props.match.params.sportId;
+            let sport = getactivity()
+                .find((activity) =>  activity.id === sportId);
+            this.setState({ sport });
     }
     render() {
         
         return(
             <Link to='/'>
-                <h1>{this.state.welcomeMessage}</h1>
+                <h1>{this.state.sport.name}</h1>
             </Link>
         );
     }

@@ -1,4 +1,3 @@
-import React from 'react';
 import football from './football.png';
 import basketball from './basketball.png';
 import tennis from './tennis.jpg';
