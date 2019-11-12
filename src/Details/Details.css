@@ -2,7 +2,7 @@
     display: flex;
 }
 
-.Details .content .text,
+.Details .content .text ,
 .Details .content .image {
     padding: 15px;
 }
