@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import getactivity from './activity-get';
 
 export default class Details extends React.Component {
@@ -19,12 +19,23 @@ export default class Details extends React.Component {
             this.setState({ sport });
     }
     render() {
-        
+        if(this.state.sport === undefined) {
+                return <Redirect to='/not-found' />;
+        } else {
         return(
-            <Link to='/'>
-                <h1>{this.state.sport.name}</h1>
-            </Link>
-        );
+                <div>
+                    <h1>{this.state.sport.name}</h1>
+                    <div>{this.state.sport.details}</div>
+                    <img 
+                        src={this.state.sport.logo}
+                        alt={this.state.sport.name} />
+                    <Link to='/'>
+                        Back to home page
+                    </Link>
+                </div>
+            );
+        }
+        
     }
 }
 
