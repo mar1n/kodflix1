@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Redirect } from 'react-router-dom';
-import getactivity from '../activity-get';
+import getactivity from '../frontend/activity-get.js';
 import './Details.css';
 
 export default class Details extends React.Component {
