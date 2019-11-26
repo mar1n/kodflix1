@@ -7,7 +7,7 @@ const port = process.env.PORT || 3001;
 app.get('/rest/shows', (req, res) => {
    return res.send(activityList);
  });
- 
+
 app.use(express.static(path.join(__dirname, '../../build')));
 
 app.get('*', function (req, res) {
