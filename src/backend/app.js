@@ -1,18 +1,20 @@
 const express = require('express')
 const app = express()
-
+const path = require('path');
 const activityList = require('./activity-get')
 const port = process.env.PORT || 3001;
 
+app.get('/rest/shows', (req, res) => {
+   return res.send(activityList);
+ });
+ 
 app.use(express.static(path.join(__dirname, '../../build')));
 
 app.get('*', function (req, res) {
    res.sendFile(path.join(__dirname, '../../build', 'index.html'));
 });
 
-app.get('/rest/shows', (req, res) => {
-   return res.send(activityList);
- });
+
 
 var server = app.listen(port, function () {
    var host = server.address().address
