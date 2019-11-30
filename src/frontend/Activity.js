@@ -6,7 +6,7 @@ export default function Activity() {
   const [activity, setActivity] = useState([]);
 
   useEffect(() => {
-    fetch('/rest/shows')
+    fetch('/rest/activity')
         .then(response => response.json())
         .then(characters => {
             console.log('the list of characters is' + characters)

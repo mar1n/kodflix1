@@ -15,7 +15,7 @@ export default class Details extends React.Component {
   componentDidMount() {
     let sportId = this.props.match.params.sportId;
    
-    fetch('/rest/shows')
+    fetch('/rest/activity')
           .then(response => response.json())
           .then(characters =>  characters.find(sport => sport.id === sportId)).then(sport => this.setState({sport}))
 
