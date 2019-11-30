@@ -14,8 +14,6 @@ app.get('*', function (req, res) {
    res.sendFile(path.join(__dirname, '../../build', './public/index.html'));
 });
 
-
-
 var server = app.listen(port, function () {
    var host = server.address().address
    var port = server.address().port
