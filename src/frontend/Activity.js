@@ -7,12 +7,12 @@ export default function Activity() {
 
   useEffect(() => {
     fetch('/rest/activity')
-        .then(response => response.json())
-        .then(characters => {
-            console.log('the list of characters is' + characters)
-            setActivity(characters);
-        })
-}, []);
+      .then(response => response.json())
+      .then(characters => {
+        console.log('the list of characters is' + characters)
+        setActivity(characters);
+      })
+  }, []);
 
   return (
     <div>

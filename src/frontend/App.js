@@ -7,15 +7,15 @@ import NotFound from './NotFound';
 
 function App() {
   return (
-      <Router>
-        <div className="App">
-          <Switch>
-            <Route exact path='/' component={Activity} />
-            <Route exact path='/not-found' component={NotFound} />
-            <Route exact path='/:sportId' component={Details} />
-          </Switch>
-        </div >
-      </Router>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route exact path='/' component={Activity} />
+          <Route exact path='/not-found' component={NotFound} />
+          <Route exact path='/:sportId' component={Details} />
+        </Switch>
+      </div >
+    </Router>
   );
 }
 
