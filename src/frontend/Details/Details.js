@@ -33,7 +33,7 @@ export default class Details extends React.Component {
                       </div>
                       <img
                           className='image'
-                          src={require(`../frontend/common/images/${this.state.sport.id}.png`)}
+                          src={require(`../common/images/${this.state.sport.id}.png`)}
                           alt={this.state.sport.name} />
                   </div>
                   <Link to='/'>
