@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
 import Sport from './Sport.js';
-import football from './football.png';
 
 export default function Activity() {
   const [activity, setActivity] = useState([]);
@@ -20,7 +19,7 @@ export default function Activity() {
       <div className='containter'>
         {
           activity.map(activity => (
-            <Sport key={activity.name} id={activity.id} name={activity.name} picture={football} />
+            <Sport key={activity.name} id={activity.id} name={activity.name} />
           ))
         }
       </div>
