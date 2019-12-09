@@ -1,6 +1,6 @@
 const MongoClient = require('mongodb').MongoClient;
 require('dotenv').config();
-const url = "mongodb://localhost:27017";
+const url = "mongodb+srv://kodflix:kodflix@kodflix-0xkqh.mongodb.net/test";
 const url2 = process.env.NODE_ENV = 'production' ?
     process.env.DB_URL_PRD :
     process.env.DB_URL_DEV;
