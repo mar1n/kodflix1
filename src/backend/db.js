@@ -11,9 +11,9 @@ module.exports = { connect };
 
 function connect() {
     return new Promise((resolve) => {
-        MongoClient.connect(url2, { useNewUrlParser: true, useUnifiedTopology: true }, function(err, mongoDB) {
+        MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }, function(err, mongoDB) {
             if (err) throw err;
-            const dbo = mongoDB.db(dbName2);
+            const dbo = mongoDB.db(dbName);
             resolve(dbo); 
           });
     });
